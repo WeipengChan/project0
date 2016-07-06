@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,4 +36,63 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void showToastPopularMovie(View view) {
+        Toast toast = null;
+        switch (view.getId())
+        {
+            case R.id.button:
+            {
+                toast = Toast.makeText(getApplicationContext(), "Popular Movie Message", Toast.LENGTH_SHORT);
+
+            }
+            break;
+
+            case R.id.button2:
+            {
+                toast = Toast.makeText(getApplicationContext(), "Stock hawk", Toast.LENGTH_SHORT);
+
+            }
+            break;
+            case R.id.button3:
+            {
+                toast = Toast.makeText(getApplicationContext(), "Build it bigger", Toast.LENGTH_SHORT);
+
+            }
+            break;
+
+            case R.id.button4:
+            {
+                toast = Toast.makeText(getApplicationContext(), "Make your app material", Toast.LENGTH_SHORT);
+
+            }
+            break;
+
+            case R.id.button5:
+            {
+                toast = Toast.makeText(getApplicationContext(), "Go ubiquitous", Toast.LENGTH_SHORT);
+
+            }
+            break;
+
+            case R.id.button6:
+            {
+                toast = Toast.makeText(getApplicationContext(), "This button will launch my capstone app!", Toast.LENGTH_SHORT);
+
+            }
+            break;
+
+        }
+        toast.show();
+    }
+
+
+
+
+
+
+
+
+
+
 }
